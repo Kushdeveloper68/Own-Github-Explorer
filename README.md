@@ -5,11 +5,12 @@ A modern and beautifully designed **GitHub Explorer** built with **Vite + React*
 ---
 
 ## 📸 Project Preview
-
-<img src=",/firstpage.png" height="300" width="300" margin="10px"/>
+<p align="center">
+<img src="./firstpage.png" height="300" width="300" margin="10px"/>
 <img src="./mainpage.png" height="300" width="300" margin="10px"/>
 <img src="./repopage.png" height="300" width="300" margin="10px"/>
 <img src="./starredpage.png" height="300" width="300" margin="10px"/>
+</p>
 ---
 
 ## ✨ Features
