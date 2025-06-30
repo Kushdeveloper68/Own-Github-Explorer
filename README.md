@@ -6,8 +6,10 @@ A modern and beautifully designed **GitHub Explorer** built with **Vite + React*
 
 ## 📸 Project Preview
 
-![GitHub Explorer Preview](https://user-images.githubusercontent.com/your-screenshot.png) <!-- Replace with your actual screenshot URL -->
-
+<img src=",/firstpage.png" height="300" width="300" margin="10px"/>
+<img src="./mainpage.png" height="300" width="300" margin="10px"/>
+<img src="./repopage.png" height="300" width="300" margin="10px"/>
+<img src="./starredpage.png" height="300" width="300" margin="10px"/>
 ---
 
 ## ✨ Features
@@ -26,7 +28,7 @@ A modern and beautifully designed **GitHub Explorer** built with **Vite + React*
 
 ## 🔗 Live Demo
 
-👉 [Check Live Demo Here](#) *(Add your deployed link if you have one)*
+👉 [Check Live Demo Here](#) 
 
 ---
 
@@ -147,12 +149,3 @@ This project is open source and available under the **MIT License**.
 
 Made with ❤️ by **Kush Pandit**
 
----
-
-## ⚡️ Notes
-
-- Replace the `![GitHub Explorer Preview](...)` with your real screenshot.
-- Add a **Live Demo link** when you deploy it (Vercel, Netlify, etc.).
-- Keep your **file structure** updated if you make changes.
-
-Happy exploring! 🚀✨
