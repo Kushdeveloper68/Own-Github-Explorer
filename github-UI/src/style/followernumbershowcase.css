@@ -1,0 +1,28 @@
+/* components/StatCard.css */
+
+.stats-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 120px;
+  padding: 1rem;
+  border: 1px solid #30363d;
+  border-radius: 0.5rem;
+  background: #0d1117;
+  
+}
+.stat-card__label {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 0.25rem;
+}
+
+.stat-card__value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #c9d1d9;
+}

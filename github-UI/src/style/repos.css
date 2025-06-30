@@ -1,0 +1,110 @@
+:root {
+  --bg-dark: #0d1117;
+  --card-bg: #161b22;
+  --border-color: #30363d;
+  --text-main: #c9d1d9;
+  --text-muted: #8b949e;
+  --accent-blue: #238636;
+  --link-blue: #2f81f7;
+  --hover-bg: rgba(110, 118, 129, 0.1);
+}
+
+.repo-container {
+  padding: 3rem 2rem;
+  width:100%;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+.repo-container h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: var(--text-main);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.main-repo-dev {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.repo-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.repo-card:hover {
+  background-color: #21262d;
+  transform: translateY(-4px);
+}
+
+.repo-card__name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--link-blue);
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.repo-card__desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.date-p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.date-p b {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.repo-card__btn {
+  margin-top: auto;
+  margin-top: 1.2rem;
+  display: inline-block;
+  background-color: transparent;
+  color: var(--link-blue);
+  border: 1px solid var(--border-color);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.repo-card__btn:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--link-blue);
+  color: #58a6ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .repo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .repo-card__name {
+    font-size: 1.1rem;
+  }
+}

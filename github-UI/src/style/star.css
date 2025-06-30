@@ -1,0 +1,75 @@
+.starred-container {
+    background: #150b16;
+  padding: 2rem;
+  width:100%;
+  margin: auto;
+}
+
+ .starred-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.repo-grids {
+    
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.repo-cards {
+  background-color: #0f0b1ae5;
+  border: 1px solid #e2e8f0;
+ 
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.repo-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.repo-cards h3 {
+  margin-bottom: 0.5rem;
+   color: #e2e8f0;
+}
+
+.repo-cards p {
+  color: #8393ae;
+  font-size: 0.95rem;
+  min-height: 60px;
+}
+
+.repo-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.repo-meta span {
+  color: #718096;
+}
+
+.repo-meta a {
+  background-color: #3182ce;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.repo-meta a:hover {
+  background-color: #2b6cb0;
+}

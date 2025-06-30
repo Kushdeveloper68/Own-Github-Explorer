@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --bg-dark: #0d1117;
+  --bg-card: #161b22;
+  --text-main: #f0f6fc;
+  --text-muted: #8b949e;
+  --accent: #2f81f7;
+  --border: #30363d;
+}
+
+.navbar {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar__logo {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar__item {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.25rem 0;
+  position: relative;
+}
+
+.navbar__item:hover {
+  color: var(--text-main);
+}
+
+.navbar__item.active-page {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.navbar__item.active-page::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent);
+  bottom: -6px;
+  left: 0;
+  border-radius: 1px;
+}
+
+.navbar__avatar img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+/* Toggle (Hamburger for future logic) */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.navbar__toggle-bar {
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-main);
+  border-radius: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__menu {
+    display: none; /* you can make it responsive if needed later */
+  }
+}
+
+
+/* Toggleable mobile menu */
+.navbar__menu--open {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border);
+  padding: 1rem 2rem;
+  gap: 1rem;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__avatar {
+    display: none;
+  }
+}

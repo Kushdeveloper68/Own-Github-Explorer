@@ -1,0 +1,97 @@
+:root {
+  --bg-dark: #0d1117;
+  --card-bg: rgba(22, 27, 34, 0.85);
+  --text-main: #f0f6fc;
+  --text-muted: #8b949e;
+  --accent: #2f81f7;
+  --border: #30363d;
+}
+
+.search-section {
+  background: url('https://repository-images.githubusercontent.com/318599822/717eb0e5-78ae-4359-a524-a7a1df7ac11b') no-repeat center center / cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+  position: relative;
+}
+
+.search-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 17, 23, 0.88); /* dark overlay */
+  backdrop-filter: blur(4px);
+  z-index: 0;
+}
+
+.search-box {
+  position: relative;
+  z-index: 1;
+  background-color: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  animation: fadeInUp 0.6s ease;
+}
+
+.search-box h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: #0d1117;
+  color: var(--text-main);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.search-box button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.search-box button:hover {
+  background-color: #1f6feb;
+}
+
+.search-error {
+  margin-top: 1rem;
+  color: #f85149;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

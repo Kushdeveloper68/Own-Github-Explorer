@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --bg-dark: #0d1117;
+  --bg-card: #161b22;
+  --text-main: #f0f6fc;
+  --text-muted: #8b949e;
+  --accent: #2f81f7;
+  --border: #30363d;
+}
+
+.overview-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.overview-card {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+}
+
+.overview-left {
+  flex: 0 0 160px;
+  text-align: center;
+}
+
+.overview-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+}
+
+.overview-right {
+  flex: 1;
+}
+
+.overview-right h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.overview-username {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.overview-bio {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.overview-info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+}
+
+.overview-info-list li {
+  margin-bottom: 0.5rem;
+}
+
+.overview-info-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.overview-info-list a:hover {
+  text-decoration: underline;
+}
+
+.overview-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background-color: #0d1117;
+  border: 2px solid var(--border);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 4px 4px 0 var(--accent);
+  min-width: 100px;
+}
+
+.stat-box span {
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overview-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .overview-right {
+    margin-top: 1rem;
+  }
+
+  .overview-stats {
+    justify-content: center;
+  }
+}
